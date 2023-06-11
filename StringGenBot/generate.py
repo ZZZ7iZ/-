@@ -38,14 +38,9 @@ ask_ques = "**اضغط لبدا استخراج جلسة**"
 buttons_ques = [
     [
         InlineKeyboardButton("‹ بايروجرام ›", callback_data="pyrogram1"),
-        InlineKeyboardButton("‹ بايروجرام V2 ›", callback_data="pyrogram"),
     ],
     [
-        InlineKeyboardButton("‹ تيرمكس ›", callback_data="telethon"),
-    ],
-    [
-        InlineKeyboardButton("‹ بـوت بايروجرام ›", callback_data="pyrogram_bot"),
-        InlineKeyboardButton(" ‹ بـوت تليثون ›", callback_data="telethon_bot"),
+        InlineKeyboardButton("‹ تيرمكس ›", callback_data="telethon")
     ],
 ]
 
