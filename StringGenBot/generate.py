@@ -171,7 +171,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"** تم استخراج جلسة{ty}** `{string_session}` \n\n \n\n** تم الاستخرج ياصديقي** \n\n [𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙋𝘼𝙍𝙆](t.me/ZZZ7iZ)"
+    text = f"** تم استخراج جلسة{ty}** \n\n`{string_session}` \n\n \n\n** تم الاستخرج ياصديقي** \n\n : @ZZZ7iZ"
     try:
         if not is_bot:
             await client.send_message("me", text)
