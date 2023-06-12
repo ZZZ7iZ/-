@@ -20,7 +20,7 @@ async def must_join_channel(bot: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply_photo(
-                    photo="https://telegra.ph/file/cc28562af5c8d6f15b1d3.jpg", caption=f"** اهلا بك عزيزي لابمكنك استخدام البوت الى ب الاشتراك بالقناة /n رابط القناة / @ZZZ7iZ",
+                    photo="https://telegra.ph/file/78939fd6b9d5ffe28de02.jpg", caption=f"** اهلا بك عزيزي لا يمكنك استخدام البوت الى ب الاشتراك بالقناة اضغط على الزر في الاسفل** : /stert",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
