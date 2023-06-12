@@ -39,13 +39,11 @@ buttons_ques = [
     [
         InlineKeyboardButton("‹ بايروجرام ›", callback_data="pyrogram1"),
    ],
-
-]
-   
-        InlineKeyboardButton("‹ تيرمكس ›", callback_data="telethon")
+   ]
+           InlineKeyboardButton("‹ تيرمكس ›", callback_data="telethon")
     ],
 ]
-InlineKeyboardButton("‹ [𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙋𝘼𝙍𝙆](t.me/ZZZ7iZ)")
+
 gen_button = [
     [
         InlineKeyboardButton(text="  اضغط لبدا استخراج كود ", callback_data="generate")
