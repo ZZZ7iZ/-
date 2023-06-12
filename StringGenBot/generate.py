@@ -169,7 +169,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"**تم الاستخراج ** {ty}  \n\n`{string_session}` \n\n** تم الاستخرج ياصديقي** \n\n [𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙋𝘼𝙍𝙆](https://t.me/ZZZ7iZ)"
+    text = f"** تم استخراج جلسة{ty}**  \n\n \n\n** تم الاستخرج ياصديقي** \n\n [𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙋𝘼𝙍𝙆](t.me/ZZZ7iZ)"
     try:
         if not is_bot:
             await client.send_message("me", text)
@@ -178,7 +178,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
     except KeyError:
         pass
     await client.disconnect()
-    await bot.send_message(msg.chat.id, "تم استخراج الجلسه بنجاح ️شوف الرسائل المحفوظه {} ".format("تيرمكس" if telethon else "بايروجرام"))
+    await bot.send_message(msg.chat.id, "**هذا هي جلستك {}/n/n `{string_session}` ".format("تيرمكس" if telethon else "بايروجرام"))
 
 
 async def cancelled(msg):
