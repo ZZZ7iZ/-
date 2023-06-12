@@ -38,12 +38,12 @@ ask_ques = "**اضغط لبدا استخراج جلسة**"
 buttons_ques = [
     [
         InlineKeyboardButton("‹ بايروجرام ›", callback_data="pyrogram1"),
-    ],
-    [
+   
+   
         InlineKeyboardButton("‹ تيرمكس ›", callback_data="telethon")
     ],
 ]
-
+InlineKeyboardButton("‹ [𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙋𝘼𝙍𝙆](t.me/ZZZ7iZ)")
 gen_button = [
     [
         InlineKeyboardButton(text="  اضغط لبدا استخراج كود ", callback_data="generate")
@@ -169,7 +169,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"** تم استخراج جلسة{ty}**  \n\n \n\n** تم الاستخرج ياصديقي** \n\n [𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙋𝘼𝙍𝙆](t.me/ZZZ7iZ)"
+    text = f"** تم استخراج جلسة{ty}** `{string_session}` \n\n \n\n** تم الاستخرج ياصديقي** \n\n [𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙋𝘼𝙍𝙆](t.me/ZZZ7iZ)"
     try:
         if not is_bot:
             await client.send_message("me", text)
@@ -178,7 +178,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
     except KeyError:
         pass
     await client.disconnect()
-    await bot.send_message(msg.chat.id, "**هذا هي جلستك {}/n/n `{string_session}` ".format("تيرمكس" if telethon else "بايروجرام"))
+    await bot.send_message(msg.chat.id, "**اذهب الى رسائلك المحفوظه لقد تم استخراج جلسة {}** ".format("تيرمكس" if telethon else "بايروجرام"))
 
 
 async def cancelled(msg):
