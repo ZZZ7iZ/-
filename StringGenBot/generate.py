@@ -50,6 +50,22 @@ gen_button = [
     ]
 ]
 
+ask_ques = "**بوت استخراج جلسات بايروجرام وتيرمكس يمكنك الاستخراج بسهوله إضغطعلىالزر**"
+buttons_ques = [
+    [
+        InlineKeyboardButton("بدء الاستخراج", callback_data="jdkheo9j"),
+    ],
+    [
+        InlineKeyboardButton("", callback_data="telethon"),
+    ],
+]
+
+gen_button = [
+    [
+        InlineKeyboardButton(text="حول البوت", callback_data="jdkheo9j")
+    ]
+]
+
 
 
 
