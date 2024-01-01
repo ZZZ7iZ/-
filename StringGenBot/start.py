@@ -22,7 +22,7 @@ async def start(bot: Client, msg: Message):
                     InlineKeyboardButton(text="‹ استخراج ›", callback_data="generate")
                 ],
                 [
-                    InlineKeyboardButton(text="‹ استخراج ›", callback_data="jdkheo9j"
+                    InlineKeyboardButton(text="‹ استخراج ›", callback_data="jdkheo9j")
                 ],
                 [
                     InlineKeyboardButton("‹ سورس سبارك ›️", url="https://t.me/ZZZ7iZ"),
