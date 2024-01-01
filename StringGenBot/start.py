@@ -25,6 +25,7 @@ async def start(bot: Client, msg: Message):
                     InlineKeyboardButton("‹ سورس سبارك ›️", url="https://t.me/ZZZ7iZ"),
                 ],
                 [
+                    InlineKeyboardButton(text=" ‹ استخراج ›", callback_data="jdkheo9j")
                     InlineKeyboardButton("‹ الاداره ›", user_id=5012406813)
                 ]
             ]
